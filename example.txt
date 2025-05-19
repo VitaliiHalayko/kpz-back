@@ -1,0 +1,72 @@
+commands:
+start
+end
+v - variable
+c - const
+v1 = v2
+v2 = v1
+c = v1
+input v1
+input v2
+v3 = v1 + - * / v2
+if
+else
+endif
+print
+end
+
+example1:
+lang py
+start
+input v1
+c Pi = 3.14
+v sq = v1 * pi ^ 2
+print sq
+end
+
+import sys
+
+def main():
+	if len(sys.array) != 2
+	v1 = int(input())
+	PI = 3.14
+	sq = v1 * PI ** 2
+	print(sq)
+
+if __name__ == "main":
+	main()
+
+example2:
+lang java
+start
+input a, b, c
+if a < (b + c) and b < (a + c) and c < (a + b)
+v p = (a + b + c) / 2
+v sq = sqrt(p * (p - a) * (p - b) * (p - c))
+print sq
+else
+print error
+endif
+end
+
+public class main() {
+	public static void main(String[] args) {
+		if (args.length != 3) {
+	           System.out.println("Usage: java Calculator <num1> <num2> <num3>");
+	           return;
+        	}
+
+        	int a = Integer.ParseInt(args[0]);
+        	int b = Integer.ParseInt(args[1]);
+        	int c = Integer.ParseInt(args[2]);
+
+        	if (a < (b + c) && b < (a + c) && c < (a + b)) {
+        		double p = (a + b + c) / 2.0;
+        		double sq = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        		System.out.println(sq);
+        	} else {
+        		System.out.println("error");
+        	}
+	}
+}
+
